@@ -16,11 +16,15 @@ $env:COMPUTERNAME
 Take note of the output (e.g., `DESKTOP-ABC1234`).
 
 ### Step 2: Share the Connected Printer
-Open PowerShell as **Administrator** and run the following command to share the printer:
+Before sharing, confirm your printer's exact name by running:
 ```powershell
-Set-Printer -Name "HP ColorLaserJet M253-M254" -Shared $true -ShareName "HPLaserJet"
+Get-Printer | Select-Object Name
 ```
-*Note: If your printer has a different name, use `Get-Printer | Select-Object Name` to find it.*
+
+Once you have the name (e.g., `HP ColorLaserJet M253-M254`), run the following as **Administrator** to share it:
+```powershell
+Set-Printer -Name "YOUR-PRINTER-NAME" -Shared $true -ShareName "HPLaserJet"
+```
 
 ### Step 3: Send the Firmware File
 Run the following command in PowerShell or Command Prompt (replace `YOUR-COMPUTER-NAME` with the name from Step 1):
