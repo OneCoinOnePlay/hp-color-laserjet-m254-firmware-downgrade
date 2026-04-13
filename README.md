@@ -30,20 +30,6 @@ This is the official method for updating/downgrading firmware via a direct USB c
    ```
 4. The printer should show "Programming" or "Erasing". Do not interact with the printer for about 5 minutes until it reboots.
 
----
-
-### Method 2: macOS / Linux / Windows (Network Connection)
-If your printer is connected via Ethernet or Wi-Fi, you can send the file directly over the network using `netcat` (`nc`).
-
-1. Find your printer's IP address from the printer's network settings menu.
-2. Open a terminal and run (replace `<printer_ip>`):
-   ```bash
-   nc -v <printer_ip> 9100 < HP_Color_Laser_Pro_M254_dw_Printer_series_20200612-2.rfu
-   ```
-   *Note: Windows users can use `ncat` (from Nmap) or the WSL environment for this method.*
-
----
-
 ## Post-Downgrade Configuration
 **CRITICAL:** Once the downgrade is complete and the printer has rebooted, you **MUST** disable automatic updates to prevent the printer from re-installing the blocking firmware.
 
