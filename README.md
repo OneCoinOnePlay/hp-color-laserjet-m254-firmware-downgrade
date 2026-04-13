@@ -56,3 +56,7 @@ If your printer is connected via Ethernet or Wi-Fi, you can send the file direct
 To verify the installation:
 1. Print a **Configuration Page** from the printer's Reports menu.
 2. Confirm the firmware datecode is `20200612`.
+
+## Source
+As HP has removed this firmware from their official support pages, it was retrieved from the Internet Archive (Wayback Machine):
+[Archived Firmware Link (2020-11-10)](https://web.archive.org/web/20201110124329/http://ftp.hp.com/pub/networking/software/pfirmware/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu)
