@@ -75,9 +75,25 @@ Set-Printer -Name "HP ColorLaserJet M253-M254" -Shared $false
 ## Post-Downgrade Configuration
 **CRITICAL:** Once the downgrade is complete, you **MUST** return to the **Manage Updates** menu and disable updates to prevent the printer from re-installing the blocking firmware.
 
-1. Navigate back to **Manage Updates** (see steps above).
-2. Set **Allow Updates** to **No**.
-3. (Optional) Set **Prompt Before Install** to **Always Prompt**.
+### For “Allow Updates” setting to be “No”:
+
+#### Touchscreen Control Panel:
+1. From the Home screen, scroll to and select **Setup**.
+2. Scroll to and select the **Service** menu.
+3. Scroll to and select **LaserJet Update**.
+   - Press **Next** to clear any messages.
+4. Select **Manage Updates**.
+5. Select **Allow Updates**.
+6. Select **No**.
+7. Press the **Home** button to return to the Home screen.
+
+#### 2-Line Control Panel:
+1. Use the right arrow to scroll to **Service** and select **OK**.
+2. Use the right arrow to scroll to **LaserJet Update** and select **OK**.
+3. Use the right arrow to scroll to **Manage Updates** and select **OK**.
+4. Use the right arrow to scroll to **Allow Updates** and select **OK**.
+5. Use the right arrow to scroll to **No** and select **OK**.
+6. Press the **Return Arrow** button multiple times to return to the Home screen.
 
 ## Verification
 To verify the installation:
