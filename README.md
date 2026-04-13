@@ -5,6 +5,11 @@ This repository contains the `20200612` firmware for the HP M254dw printer. Down
 ## ⚠️ Disclaimer
 **WARNING:** Flashing firmware can potentially brick your printer. Use this at your own risk. Ensure the printer is not interrupted or powered off during the update process.
 
+## Mandatory Prerequisite: Enable Downgrade
+Before you begin, you **must** enable the printer to accept older firmware:
+1. On the printer touchscreen, go to **Setup** > **Service** > **LaserJet Update** > **Manage Updates**.
+2. Set **Allow Downgrade** to **Yes**.
+
 ## Installation Method: Windows (USB Connection)
 This method involves sharing the printer locally via PowerShell and copying the firmware binary to the shared print queue.
 
